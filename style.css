@@ -1,20 +1,53 @@
 body {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #111111;
 }
 
 .container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #ff851b;
 }
 
-.done {
-    text-decoration: line-through;
+h1 {
+  font-size: 4em;
+}
+
+p {
+  font-size: 1.7em;
+  font-weight: bold;
+}
+
+input {
+  padding: 5px 80px 5px 0px;
+}
+
+#add {
+  background-color: #111111;
+  color: #ff851b;
+  border-color: white;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+ul {
+  padding: 0;
+  list-style-type: none;
+  font-size: 1.7em;
+}
+
+li {
+  margin-right: 10px;
 }
 
 .delete {
-    background-color: red;
-    margin-left: 10px;
+  margin-left: 15px;
+  background-color: red;
+}
+.done {
+  text-decoration: line-through;
 }

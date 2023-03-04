@@ -16,21 +16,21 @@ function createListElement() {
   var deleteButton = document.createElement("button");
   deleteButton.setAttribute("class", "delete");
   deleteButton.appendChild(document.createTextNode("X"));
-  ul>li.appendChild(deleteButton).addEventListener("click", deleteItem);
+  ul > li.appendChild(deleteButton).addEventListener("click", deleteItem);
 }
 
 // Item created by clicking on Add
 function addListAfterClick() {
   if (inputLength() > 0) {
     createListElement();
-}
+  }
 }
 
 // Item created by pressing Enter
 function addListAfterKeyPress(event) {
-     if (inputLength() > 0 && event.which === 13) {
-       createListElement();
-     }
+  if (inputLength() > 0 && event.which === 13) {
+    createListElement();
+  }
 }
 
 // Add and remove line-through on items
@@ -43,7 +43,7 @@ function addLineOnClick(event) {
 function deleteItem(event) {
   var deleteItem = event.target;
   if (deleteItem.classList.contains("delete")) {
-    deleteItem.parentNode.remove()
+    deleteItem.parentNode.remove();
   }
 }
 
