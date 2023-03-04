@@ -1,0 +1,20 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.done {
+    text-decoration: line-through;
+}
+
+.delete {
+    background-color: red;
+    margin-left: 10px;
+}
